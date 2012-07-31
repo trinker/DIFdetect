@@ -2,7 +2,7 @@
 \alias{logDIF}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+logistic DIF detection
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

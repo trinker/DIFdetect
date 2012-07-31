@@ -2,7 +2,7 @@
 \alias{easyview}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Easy viewing of sig objects
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -39,7 +39,6 @@ easyview(sigsobject)
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
 ##---- Should be DIRECTLY executable !! ----
