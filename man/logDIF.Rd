@@ -51,20 +51,13 @@ logDIF(items, group, digits = 3, output = "bare")
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (items, group, digits = 3, output = "bare") 
-{
-    dat <- data.frame(items)
-    total <- rowSums(dat)
-    MODS <- lapply(seq_along(dat), function(i) logDIFh(dat[, 
-        i], total = total, group = group, digits = digits, output = output))
-    names(MODS) <- paste0("ITEM_", 1:length(MODS))
-    return(MODS)
-  }
+MODS <- logDIF(dat[, 2:21], dat$race)
+(MODSnsigs <- sigs(MODS))
+(MODSnsigs <- sigs(MODS, questions))
+easyview(MODSnsigs)
+sigview(MODS, MODSnsigs, "all.sig")  #to view any models that have significant values
+sigview(MODS, MODSnsigs)
+easyview(MODSnsigs)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
