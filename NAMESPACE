@@ -1,1 +1,9 @@
-exportPattern("^[[:alpha:]]+")
+export(easyview)
+export(left.just)
+export(logDIF)
+export(logDIFh)#export for now
+export(mhDIF)
+export(row2col)
+export(sigs)
+export(sigview)
+import(difR)
